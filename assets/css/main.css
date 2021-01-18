@@ -4692,8 +4692,8 @@ input, select, textarea {
 /* Added later by me */
 
 
-@media (min-width: 700px) {
-	/* This part is only read by viewports wider than 1200 pixels */
+@media (min-width: 800px) {
+	/* This part is only read by viewports wider than given pixels */
 	.split {
 		display: flex;
 	}
@@ -4706,5 +4706,12 @@ input, select, textarea {
 	.right-half {
 		flex: 50%;
 		padding: 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.image.main {
+		width: 80%;
+		margin: auto;
 	}
 }
